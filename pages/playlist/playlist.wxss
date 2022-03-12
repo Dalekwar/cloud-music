@@ -1,0 +1,115 @@
+/* 详情区域 */
+.listSongContainer .header {
+    position: relative;
+    width: 100%;
+    height: 300rpx;
+    background-image: linear-gradient(#e66465, #9198e5)
+}
+
+.listSongContainer .header .listDetail {
+    position: absolute;
+    top: 0;
+    left: -450rpx;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50rpx;
+}
+
+.header .name {
+    position: absolute;
+    top: 70rpx;
+    left: 300rpx;
+    font-size: 28rpx;
+    color: #fff;
+    /*规定段落中的文本不进行换行*/
+    white-space: nowrap;
+    /*溢出部分隐藏*/
+    overflow: hidden;
+    /*溢出文字以省略号代替显示*/
+    text-overflow: ellipsis;
+}
+
+.header .description {
+    position: absolute;
+    top: 150rpx;
+    left: 300rpx;
+    font-size: 26rpx;
+    color: #fff;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /*显示的行数*/
+}
+
+.header .arc {
+    position: absolute;
+    left: 0;
+    top: 280rpx;
+    width: 100%;
+    height: 36rpx;
+}
+
+/* 列表区域 */
+.listContainer {
+    margin-top: 10rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+    padding: 0 20rpx;
+}
+
+.listHeader {
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.listHeader .changeMore {
+    float: right;
+}
+
+/* 歌曲部分 */
+.listScroll {
+    height: calc(100vh - 410rpx);
+}
+
+.scrollItem {
+    display: flex;
+    margin: 40rpx 0 20rpx 0;
+}
+
+.scrollItem image {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 10rpx;
+}
+
+.scrollItem .musicInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+    flex: 1;
+}
+
+.musicInfo text {
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 25rpx;
+    max-width: 500rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musicInfo .musicAuthor {
+    color: #333;
+}
+
+.scrollItem .iconfont {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: right;
+}
